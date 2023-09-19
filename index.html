@@ -35,13 +35,13 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>Über mich</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Lebenslauf</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Dienstleistungen</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Fähigkeiten</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Kontakt</span></a></li>
+	          <li class="nav-item"><a href="#home-section" onclick="myFunction()" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" onclick="myFunction()" class="nav-link"><span>Über mich</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" onclick="myFunction()" class="nav-link"><span>Lebenslauf</span></a></li>
+	          <li class="nav-item"><a href="#services-section" onclick="myFunction()" class="nav-link"><span>Dienstleistungen</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" onclick="myFunction()" class="nav-link"><span>Fähigkeiten</span></a></li>
+	          <li class="nav-item"><a href="#projects-section" onclick="myFunction()" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" onclick="myFunction()" class="nav-link"><span>Kontakt</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -553,3 +553,10 @@
     
   </body>
 </html>
+
+<script>
+		function myFunction() {
+  var element = document.getElementById("ftco-nav");
+  element.classList.remove("show");
+}
+</script>
